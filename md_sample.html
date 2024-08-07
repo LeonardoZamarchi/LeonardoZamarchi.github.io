@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+</head>
+<body>
+    <h1>Sobre Mim</h1>
+    <p>Aqui você pode colocar informações sobre você.</p>
+
+
+    <h1>Markdown em HTML</h1>
+    <div id="markdown-content">
+        <!-- O conteúdo em Markdown será inserido aqui -->
+    </div>
+    <script>
+        // Conteúdo em Markdown
+        var markdownText = `
+# Título
+## Subtítulo
+Texto em **negrito** e *itálico*.
+
+- Item 1
+- Item 2
+- Item 3
+
+Link para o Google
+        `;
+
+        // Converte Markdown para HTML
+        var converter = new showdown.Converter();
+        var html = converter.makeHtml(markdownText);
+
+        // Insere o HTML convertido na página
+        document.getElementById('markdown-content').innerHTML = html;
+    </script>
+
+    
+    <a href="index.html">Voltar para a página principal</a>
+</body>
+</html>
