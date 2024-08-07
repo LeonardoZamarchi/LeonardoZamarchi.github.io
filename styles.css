@@ -58,8 +58,10 @@ main {
 }
 
 .content {
-    width: 50%;
-    margin: 50px auto 0 auto; /* Adiciona a margem superior de 100px */
+    width: 80%; /* Use uma porcentagem maior para telas menores */
+    max-width: 1200px; /* Limite a largura máxima */
+    margin: 50px auto 0 auto;
+    padding: 0 10px; /* Adicione um pouco de padding para telas menores */
 }
 
 h1 {
@@ -75,13 +77,14 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 20px;
-    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    flex-wrap: wrap;
 }
 
 .image-container {
-    width: 300px;
-    height: 350px;
-    flex-shrink: 0; /* Impede que a imagem diminua de tamanho */
+    width: 100%; /* Ajuste para 100% para telas menores */
+    max-width: 300px; /* Limite a largura máxima */
+    height: auto; /* Ajuste a altura automaticamente */
+    flex-shrink: 0;
 }
 
 .image-container img {
@@ -91,10 +94,10 @@ img {
 }
 
 .text-container {
-    text-size-adjust: 9;
-    width: 390px;
-    height: 350px;  
-    flex-shrink: 0; /* Impede que a div de texto diminua de tamanho */
+    width: 100%; /* Ajuste para 100% para telas menores */
+    max-width: 390px; /* Limite a largura máxima */
+    height: auto; /* Ajuste a altura automaticamente */
+    flex-shrink: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -183,18 +186,22 @@ footer {
 
 
 /* Media Query para telas menores */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .content {
-        width: 80%;
+        width: 60%;
     }
 
-    .image-text-container {
-        flex-direction: column;
-        align-items: center;
+    .image-container, .text-container {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        width: 40%;
     }
 
-    .text-container {
-        padding-left: 0;
-        margin-top: 20px;
+    .image-container, .text-container {
+        width: 45%;
     }
 }
