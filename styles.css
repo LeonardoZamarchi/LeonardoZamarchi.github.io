@@ -12,6 +12,18 @@ body {
 header {
     background-color: #000000;
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Alinhado ao conteúdo principal da página */
 }
 
 nav ul {
@@ -19,7 +31,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
@@ -40,6 +52,40 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+.language-selector {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.language-selector button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.language-selector button:hover {
+    background-color: #000000;
+}
+
+.language-selector button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.home {
+    width: 40%; /* Alinhado com o cabeçalho */
+    margin: 260px auto 0 auto; /* Margem superior ajustada */
+}
+
 main {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
@@ -47,10 +93,7 @@ main {
     flex: 1;
 }
 
-.home {
-    width: 40%;
-    margin: 260px auto 0 auto; /* Adiciona a margem superior de 100px */
-}
+
 .home p{
     font-size: small;
     color: #808d88;

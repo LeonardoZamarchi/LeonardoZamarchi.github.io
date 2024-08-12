@@ -13,62 +13,79 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="recomendacoes.html">Recomendações</a></li>
+                <li><a href="about.html" data-en="About" data-pt="Sobre">Sobre</a></li>
+                <li><a href="portfolio.html" data-en="Portfolio" data-pt="Portfólio">Portfólio</a></li>
+                <li><a href="recomendacoes.html" data-en="Recommendations" data-pt="Recomendações">Recomendações</a></li>
             </ul>
         </nav>
+        <div class="language-selector">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('pt')">PT</button>
+        </div>
     </header>
     <main> 
         <div class="content">
-            <h1>Sobre</h1>
+            <h1 data-en="About" data-pt="Sobre">Sobre</h1>
             <div class="image-text-container">
                 <div class="image-container">
                     <img src="images/foto_leonardo.jpg" alt="Foto de Leonardo">
                 </div>
                 <div class="text-container">
-                    <p><b>Olá! Eu sou Leonardo Zamarchi</b>, programador há mais de 10 anos.</p>
-                    <p>Sou <b>analista de dados, programador</b>, me aventuro no desenvolvimento de <b>redes neurais</b> e até prototipar alguns <b>modelos inteligentes</b>!</p>
-                    <p>Nasci e resido em <b>Pato Branco, Paraná, Brasil</b></p>
-                    <p>A maior realização da minha carreira até hoje foi <b>aprender a gostar de resolver problemas</b> curtindo o processo até a solução.</p>
-                    <p>Gosto de estar sempre <b>aprendendo</b> algo novo e novas e <b>melhores</b> formas de fazer algo que já tenha feito! </p>
+                    <p data-pt="Olá! Eu sou Leonardo Zamarchi, programador há mais de 10 anos."
+                       data-en="Hello! I am Leonardo Zamarchi, a programmer for over 10 years.">
+                       <b>Olá! Eu sou Leonardo Zamarchi</b>, programador há mais de 10 anos.
+                    </p>
+                    <p data-pt="Sou programador, data analyst, me aventuro no desenvolvimento de redes neurais e até prototipar alguns modelos inteligentes!"
+                       data-en="I am a programmer, data analyst, and I venture into developing neural networks and even prototyping some intelligent models!">
+                       Sou <b>programador, data analyst</b>, me aventuro no desenvolvimento de <b>redes neurais</b> e até prototipar alguns <b>modelos inteligentes</b>!
+                    </p>
+                    <p data-pt="Nasci e resido em Pato Branco, Paraná, Brasil"
+                       data-en="I was born and live in Pato Branco, Paraná, Brazil.">
+                       Nasci e resido em <b>Pato Branco, Paraná, Brasil</b>.
+                    </p>
+                    <p data-pt="A maior realização da minha carreira até hoje foi aprender a gostar de resolver problemas curtindo o processo até a solução."
+                       data-en="The greatest achievement of my career so far has been learning to enjoy solving problems, enjoying the process until the solution.">
+                       A maior realização da minha carreira até hoje foi <b>aprender a gostar de resolver problemas</b> curtindo o processo até a solução.
+                    </p>
+                    <p data-pt="Gosto de estar sempre aprendendo algo novo e novas e melhores formas de fazer algo que já tenha feito!"
+                       data-en="I always enjoy learning something new and discovering new and better ways to do something I have already done!">
+                       Gosto de estar sempre <b>aprendendo</b> algo novo e novas e <b>melhores</b> formas de fazer algo que já tenha feito!
+                    </p>
                 </div>
             </div>
             <div class="biography">
-            <h2>Bio</h2>
+                <h2 data-en="Bio" data-pt="Bio">Bio</h2>
                 <div class="biography-text">
-                    <p>Sou brasileiro, nasci em outubro 1998 e atualmente atuo como Analista de Dados / Programador.</p>
-                    <p>Iniciei na programação por volta de 2013, desenvolvendo softwares ERP para desktop.</p>
-                    <p>Migrei para Python, linguagem que atualmente tenho maior tempo de proficiência, cerca de 7 anos.</p>
-                    <p>Trabalhei durante a maior parte da minha jornada em coperativas, tanto financeira quanto de saúde, onde pude desenvolver diversas soluções, tais como
-                        automação de processos, estruturar bancos de dados, criar sistemas de monitoramento de processos, entre <a href = portfolio.html>outros</a>.
-                    <p>Participei e ainda atuo em projetos voluntários onde lecionei sobre tecnologia em diferentes níveis e até projetos 
-                        open source desenvolvendo em áreas como astro física, genética e web scrap.</p>
+                    <p data-en="I'm Brazilian, born in October 1998, and currently work as a Data Analyst / Programmer." data-pt="Sou brasileiro, nasci em outubro 1998 e atualmente atuo como Analista de Dados / Programador."></p>
+                    <p data-en="I started programming around 2013, developing ERP desktop software." data-pt="Iniciei na programação por volta de 2013, desenvolvendo softwares ERP para desktop."></p>
+                    <p data-en="I migrated to Python, the language in which I currently have the most proficiency, about 7 years." data-pt="Migrei para Python, linguagem que atualmente tenho maior tempo de proficiência, cerca de 7 anos."></p>
+                    <p data-en="I have worked mostly in cooperatives, both financial and health, where I have developed various solutions, such as process automation, database structuring, process monitoring systems, among others." data-pt="Trabalhei durante a maior parte da minha jornada em coperativas, tanto financeira quanto de saúde, onde pude desenvolver diversas soluções, tais como automação de processos, estruturar bancos de dados, criar sistemas de monitoramento de processos, entre outros."></p>
+                    <p data-en="I have participated and still work on volunteer projects where I have taught technology at different levels and even open-source projects developing in areas such as astrophysics, genetics, and web scraping." data-pt="Participei e ainda atuo em projetos voluntários onde lecionei sobre tecnologia em diferentes níveis e até projetos open source desenvolvendo em áreas como astro física, genética e web scrap."></p>
                 </div>
             </div>
             <div class="career">
-                <h2>Carreira</h2>
+                <h2 data-en="Career" data-pt="Carreira">Carreira</h2>
                 <div class="carreira">
-                    <h3>Analista de Dados</h3>
-                    <a href="https://www.sicredi.com.br/coop/parquedasaraucarias/">Sicredi Parque das Araucárias - Pato Branco,PR</a>
-                    <p>Jan 2022 - Atual</p>
+                    <h3 data-en="Data Analyst" data-pt="Analista de Dados">Analista de Dados</h3>
+                    <a href="https://www.sicredi.com.br/coop/parquedasaraucarias/" data-en="Sicredi Parque das Araucárias - Pato Branco, PR" data-pt="Sicredi Parque das Araucárias - Pato Branco, PR">Sicredi Parque das Araucárias - Pato Branco, PR</a>
+                    <p data-en="Jan 2022 - Present" data-pt="Jan 2022 - Atual">Jan 2022 - Atual</p>
                 </div>
 
                 <div class="carreira">
-                    <h3>Assistente de TI</h3>
-                    <a href="https://www.unimed.coop.br/site/web/patobranco">Unimed Pato Branco - Pato Branco,PR</a>
-                    <p>Out 2019 - Dez 2021</p>
+                    <h3 data-en="IT Assistant" data-pt="Assistente de TI">Assistente de TI</h3>
+                    <a href="https://www.unimed.coop.br/site/web/patobranco" data-en="Unimed Pato Branco - Pato Branco, PR" data-pt="Unimed Pato Branco - Pato Branco, PR">Unimed Pato Branco - Pato Branco, PR</a>
+                    <p data-en="Oct 2019 - Dec 2021" data-pt="Out 2019 - Dez 2021">Out 2019 - Dez 2021</p>
                 </div>
                 
                 <div class="carreira">
-                    <h3>Analista de Software</h3>
-                    <a href="https://viasoft.com.br/">Viasoft Softwares Empresariais - Pato Branco,PR</a>
-                    <p>Abr 2017 - Out 2019</p>
+                    <h3 data-en="Software Analyst" data-pt="Analista de Software">Analista de Software</h3>
+                    <a href="https://viasoft.com.br/" data-en="Viasoft Softwares Empresariais - Pato Branco, PR" data-pt="Viasoft Softwares Empresariais - Pato Branco, PR">Viasoft Softwares Empresariais - Pato Branco, PR</a>
+                    <p data-en="Apr 2017 - Oct 2019" data-pt="Abr 2017 - Out 2019">Abr 2017 - Out 2019</p>
                 </div>
             </div> 
             
             <div class="skillset">
-                <h2>Proficiências</h2>
+                <h2 data-en="Skills" data-pt="Proficiências">Proficiências</h2>
                 <div class="hardskills">
                     <div class="skills-icons">
                         <div class="skill-item">
@@ -85,7 +102,7 @@
                         </div>
                         <div class="skill-item">
                             <img src="images/graph.png" alt="Graph Icon">
-                            <span>Business Inteligence</span>
+                            <span>Business Intelligence</span>
                         </div>
                         <div class="skill-item">
                             <img src="https://www.rust-lang.org/logos/rust-logo-64x64.png" alt="Rust Icon">
@@ -97,6 +114,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -109,5 +127,6 @@
             <a class="fab fa-twitter" href="https://www.twitter.com"></a>
         </div>
     </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

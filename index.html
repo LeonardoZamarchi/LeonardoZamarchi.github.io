@@ -13,17 +13,23 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="recomendacoes.html">Recomendações</a></li>
+                <li><a href="about.html" data-en="About" data-pt="Sobre">Sobre</a></li>
+                <li><a href="portfolio.html" data-en="Portfolio" data-pt="Portfólio">Portfólio</a></li>
+                <li><a href="recomendacoes.html" data-en="Recommendations" data-pt="Recomendações">Recomendações</a></li>
             </ul>
         </nav>
+        <div class="language-selector">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('pt')">PT</button>
+        </div>
     </header>
     <main>
         <div class="home">
-            <h1>Leonardo Zamarchi</h1>
-            <p>Analista de Dados | Python | Data Science | Machine Learning | Power BI</p>
-            <a href="about.html">Clique para começar</a>
+            <h1 data-en="Leonardo Zamarchi" data-pt="Leonardo Zamarchi">Leonardo Zamarchi</h1>
+            <p data-en="Data Analyst | Python | Data Science | Machine Learning | Power BI" data-pt="Analista de Dados | Python | Data Science | Machine Learning | Power BI">
+                Analista de Dados | Python | Data Science | Machine Learning | Power BI
+            </p>
+            <a href="about.html" data-en="Click to start" data-pt="Clique para começar">Clique para começar</a>
         </div>
     </main>
     <footer>
@@ -36,5 +42,6 @@
             <a class="fab fa-twitter" href="https://www.twitter.com"></a>
         </div>
     </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

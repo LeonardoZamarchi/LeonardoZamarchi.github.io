@@ -13,17 +13,21 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="recomendacoes.html">Recomendações</a></li>
+                <li><a href="about.html" data-en="About" data-pt="Sobre">Sobre</a></li>
+                <li><a href="portfolio.html" data-en="Portfolio" data-pt="Portfólio">Portfólio</a></li>
+                <li><a href="recomendacoes.html" data-en="Recommendations" data-pt="Recomendações">Recomendações</a></li>
             </ul>
         </nav>
+        <div class="language-selector">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('pt')">PT</button>
+        </div>
     </header>
     <main>
         <div class="content">
-            <h1>Portfólio</h1>
-            <p>Aqui você pode colocar seus trabalhos e projetos.</p>
-            <a href="about.html">Voltar para a página principal</a>
+            <h1 data-en="Portfolio" data-pt="Portfólio">Portfólio</h1>
+            <p data-en="Here you can showcase your work and projects." data-pt="Aqui você pode colocar seus trabalhos e projetos."></p>
+            <a href="about.html" data-en="Back to the main page" data-pt="Voltar para a página principal">Voltar para a página principal</a>
         </div>
     </main>
     <footer>
@@ -36,5 +40,6 @@
             <a class="fab fa-twitter" href="https://www.twitter.com"></a>
         </div>
     </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
