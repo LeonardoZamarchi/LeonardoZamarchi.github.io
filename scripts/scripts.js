@@ -5,6 +5,7 @@ function setLanguage(language) {
     localStorage.setItem('language', language);
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const language = localStorage.getItem('language') || 'en';
     setLanguage(language);
