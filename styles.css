@@ -39,9 +39,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #b5bab8;
     text-decoration: none;
-    font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -163,7 +162,8 @@ img {
 
 .career p {
     font-size: small;
-    margin-top: -4px;
+    margin-top: -2px;
+    margin-bottom: -2px;
     color: #808d88;
 }
 
@@ -199,17 +199,21 @@ footer {
 }
 
 .skillset{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .skills-icons {
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .skill-item {
     text-align: center;
+    flex: 1 1 22%; /* Ajuste a largura conforme necessário */
+    max-width: 25%; /* Garante que não ultrapasse 4 itens por linha */
+    margin: 10px;
 }
 
 .skill-item img {
@@ -226,6 +230,11 @@ footer {
     color: #808d88; /* Ajuste conforme necessário */
 }
 
+
+.skill-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
 
 
 /* Media Query para telas menores */
@@ -249,3 +258,11 @@ footer {
     }
 }
 
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skill-item {
+        flex: 1 1 45%; /* Ajuste a largura para dispositivos móveis */
+        max-width: 45%;
+    }
+}
