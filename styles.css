@@ -291,6 +291,29 @@ footer {
     background-color: #333333;
 }
 
+.contatos p{
+    color: #808d88;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.contato a {
+    font-size: medium;
+    color: #808d88;
+}
+
+.contato p {
+    font-size: small;
+    margin-top: -2px;
+    margin-bottom: -4px;
+    color: #808d88;
+}
+
+.contato h3 {
+    margin-top: 15px;
+    margin-bottom: -2px;
+}
+
 /* Media Query para telas menores */
 @media (min-width: 768px) {
     .content {
@@ -352,5 +375,9 @@ footer {
         margin-top: 5px;
         padding: 5px;
         font-size: 0.8em; /* Reduz o tamanho dos botões */
+    }
+    .home{
+        width: 40%; /* Alinhado com o cabeçalho */
+        margin: 200px auto 0 auto; /* Margem superior ajustada */
     }
 }
