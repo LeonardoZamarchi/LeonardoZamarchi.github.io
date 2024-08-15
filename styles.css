@@ -138,7 +138,7 @@ img {
 .text-container {
     width: 100%; /* Ajuste para 100% para telas menores */
     max-width: 390px; /* Limite a largura máxima */
-    height: auto; /* Ajuste a altura automaticamente */
+    height: 100%; /* Ajuste a altura automaticamente */
     flex-shrink: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -347,6 +347,10 @@ footer {
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
+    .home{
+        margin-top: 50px;
+    }
+
     nav {
         width: 100%;
         flex-direction: column;
