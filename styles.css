@@ -247,6 +247,84 @@ a:hover {
     margin-right: 10px;
 }
 
+.contatos p{
+    color: #808d88;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.contato a {
+    font-size: medium;
+    color: #808d88;
+}
+
+.contato p {
+    font-size: small;
+    margin-top: -2px;
+    margin-bottom: -4px;
+    color: #808d88;
+}
+
+.contato h3 {
+    margin-top: 15px;
+    margin-bottom: -2px;
+}
+
+.projeto {
+    background-color: #201e1e;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.projeto:hover {
+    transform: scale(1.02);
+}
+
+/* Project title */
+.projeto h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.projeto h3 i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Project link */
+.projeto a {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/* Project description */
+.projeto p {
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Tags */
+.projeto p:last-child {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+}
 
 footer {
     background-color: #000000;
@@ -289,29 +367,6 @@ footer {
 
 .button-container button:hover {
     background-color: #333333;
-}
-
-.contatos p{
-    color: #808d88;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-
-.contato a {
-    font-size: medium;
-    color: #808d88;
-}
-
-.contato p {
-    font-size: small;
-    margin-top: -2px;
-    margin-bottom: -4px;
-    color: #808d88;
-}
-
-.contato h3 {
-    margin-top: 15px;
-    margin-bottom: -2px;
 }
 
 /* Media Query para telas menores */
