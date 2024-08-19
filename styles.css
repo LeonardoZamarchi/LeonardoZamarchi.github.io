@@ -453,3 +453,17 @@ footer {
         margin: 200px auto 0 auto; /* Margem superior ajustada */
     }
 }
+
+.language-button {
+    margin-top: 50px;
+    margin-left: -8px;
+    background-color: #000000;
+    color: #808d88;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.language-button:hover {
+    background-color: #000000;
+}
