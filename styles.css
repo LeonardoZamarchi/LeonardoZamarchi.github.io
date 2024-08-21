@@ -72,8 +72,8 @@ nav ul li a:hover {
     background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
     background-repeat: no-repeat;
     background-position: center;
-    width: 40px; /* Ajuste conforme necessário */
-    height: 30px; /* Ajuste conforme necessário */
+    width: 35px; /* Ajuste conforme necessário */
+    height: 25px; /* Ajuste conforme necessário */
 }
 
 .language-selector button:hover {
