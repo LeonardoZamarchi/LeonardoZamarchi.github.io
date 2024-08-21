@@ -69,6 +69,11 @@ nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    background-size: cover; /* Ajusta a imagem para cobrir todo o botão */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
 }
 
 .language-selector button:hover {
@@ -78,6 +83,14 @@ nav ul li a:hover {
 .language-selector button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.language-selector button[onclick="setLanguage('en')"] {
+    background-image: url('images/uk.png');
+}
+
+.language-selector button[onclick="setLanguage('pt')"] {
+    background-image: url('images/brasil.png');
 }
 
 .home {
