@@ -324,6 +324,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.projeto i{
+    font-size: 0.8em;
+    color: #777;
+}
+
 /* Project description */
 .projeto p {
     font-size: 1em;
@@ -351,6 +356,7 @@ a:hover {
     margin-right: 10px;
     border-radius: 4px;
 }
+
 
 footer {
     background-color: #000000;
