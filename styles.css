@@ -338,7 +338,7 @@ a:hover {
 }
 
 /* Tags */
-.projeto p:last-child {
+.projeto-tags p{
     font-size: 0.9em;
     color: #777;
     margin-top: 10px;
@@ -485,4 +485,28 @@ footer {
 
 .language-button:hover {
     background-color: #000000;
+}
+
+
+.projeto-descricao {
+    display: none; /* Esconder a descrição inicialmente */
+}
+
+.projeto.expandido .projeto-descricao {
+    display: block; /* Mostrar a descrição quando o projeto estiver expandido */
+}
+
+.toggle-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
 }
