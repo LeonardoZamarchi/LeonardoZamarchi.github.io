@@ -425,9 +425,13 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .skills-icons {
+        justify-content: space-around; /* Ajusta o espaçamento entre os itens */
+    }
+    
     .skill-item {
         flex: 1 1 45%; /* Ajuste a largura para dispositivos móveis */
-        max-width: 45%;
+        max-width: 43%;
     }
 }
 
