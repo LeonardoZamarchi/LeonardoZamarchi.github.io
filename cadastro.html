@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Nome e CPF</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    form {
+      width: 90%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    li {
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Registro de Nome e CPF</h1>
+  <form id="registration-form">
+    <input type="text" id="name-input" placeholder="Digite o nome" required>
+    <input type="text" id="cpf-input" placeholder="Digite o CPF" maxlength="14" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <ul id="results-list"></ul>
+
+  <script>
+    function applyCPFMask(value) {
+      return value
+        .replace(/\D/g, '') // Remove caracteres não numéricos
+        .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona o primeiro ponto
+        .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona o segundo ponto
+        .replace(/(\d{3})(\d{2})$/, '$1-$2'); // Adiciona o traço
+    }
+
+    document.getElementById('cpf-input').addEventListener('input', (event) => {
+      event.target.value = applyCPFMask(event.target.value);
+    });
+
+    document.getElementById('registration-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const nameInput = document.getElementById('name-input');
+      const cpfInput = document.getElementById('cpf-input');
+
+      const name = nameInput.value.trim();
+      const cpf = cpfInput.value.trim();
+
+      if (name && cpf) {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Nome: ${name}, CPF: ${cpf}`;
+        document.getElementById('results-list').appendChild(listItem);
+
+        // Limpa os campos
+        nameInput.value = '';
+        cpfInput.value = '';
+      } else {
+        alert('Por favor, preencha ambos os campos.');
+      }
+    });
+  </script>
+</body>
+</html>
