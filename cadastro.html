@@ -110,10 +110,9 @@
         listItem.textContent = `Nome: ${name}, CPF: ${cpf}, Opção: ${paOption}`;
         document.getElementById('results-list').appendChild(listItem);
 
-        // Limpa os campos
+        // Limpa os campos de nome e CPF
         nameInput.value = '';
         cpfInput.value = '';
-        paSelect.value = '';
       } else {
         alert('Por favor, preencha todos os campos.');
       }
@@ -127,6 +126,18 @@
       option.textContent = `PA-${i.toString().padStart(2, '0')}`;
       paSelect.appendChild(option);
     }
+
+    // Mantém a última opção selecionada após envio
+    paSelect.addEventListener('change', (event) => {
+      paSelect.setAttribute('data-selected', event.target.value);
+    });
+
+    document.getElementById('registration-form').addEventListener('reset', () => {
+      const lastSelected = paSelect.getAttribute('data-selected');
+      if (lastSelected) {
+        paSelect.value = lastSelected;
+      }
+    });
   </script>
 </body>
 </html>
